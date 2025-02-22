@@ -113,7 +113,6 @@
 											<li><a href="#">Our Services <i class="icofont-rounded-down"></i></a>
 												<ul class="dropdown">
 													<li><a href="appdev.html">App Development</a></li>
-													<li><a href="unconstruction.html">Software Development</a></li>
 													<li><a href="unconstruction.html">Hosting Services</a></li>
 													<li><a href="unconstruction.html">Consultancy</a></li>
 												</ul>
@@ -124,7 +123,7 @@
 											<li><a href="#">Customer Support<i class="icofont-rounded-down"></i></a>
 												<ul class="dropdown">
 													<li><a href="unconstruction.html">Whatsapp</a></li>
-													<li><a href="unconstruction.html">Gmail</a></li>
+													<li><a href="#contact_form">Gmail</a></li>
 													<li><a href="#">Call: +233549672143</a></li>
 				
 												</ul>
@@ -707,6 +706,58 @@
 			</div>
 		</section>
 		<!--/ End Why choose -->
+
+	    <!------Send Us Message through Whatsapp----->
+
+<!----Javascript Code For Sending Form Data To WhatsApp---->
+	
+	<script>
+	function gotowhatsapp() {
+		
+		var name = document.getElementById("name").value;
+		var phone = document.getElementById("phone").value;
+		var email = document.getElementById("email").value;
+		var service = document.getElementById("service").value;
+	
+		var url = "https://wa.me/918789529215?text=" 
+		+ "Name: " + name + "%0a"
+		+ "Phone: " + phone + "%0a"
+		+ "Email: " + email  + "%0a"
+		+ "Service: " + service; 
+	
+		window.open(url, '_blank').focus();
+	}
+	</script>
+	
+	
+	
+	
+	
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+			function gotowhatsapp() {
+	
+				var name = document.getElementById("name").value;
+				var phone = document.getElementById("phone").value;
+				var email = document.getElementById("email").value;
+				var service = document.getElementById("service").value;
+	
+				var url = "https://wa.me/+233549672143?text="
+					+ "Name: " + name + "%0a"
+					+ "Phone: " + phone + "%0a"
+					+ "Email: " + email + "%0a"
+					+ "Service: " + service;
+	
+				window.open(url, '_blank').focus();
+			}
+		</script>
+	
+			<!-----Whatsapp floating icon ends here--->
+	
+
+
+	    <!--------Send Message through whatsapp------->
 
 
 
